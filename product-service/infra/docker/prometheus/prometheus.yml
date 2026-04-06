@@ -1,0 +1,17 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: 'prometheus'
+    static_configs:
+      # Prometheus scrapes itself on its own container port (9090), not the remapped host port
+      - targets: [ 'localhost:9090' ]
+
+  # Product Service backend — running on the host machine.
+  # On Linux, Docker containers reach the host via the bridge gateway IP.
+  # We use host.docker.internal mapped in docker-compose.yml.
+  - job_name: 'product-service'
+    static_configs:
+      - targets: [ 'host.docker.internal:8080' ]
+    metrics_path: /metrics
