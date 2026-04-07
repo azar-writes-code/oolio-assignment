@@ -4,12 +4,14 @@ import (
 	"context"
 	"log"
 	"sync"
-
-	"github.com/azar-writes-code/oolio-data-ingestion/internal/storage"
 )
 
+type Storage interface {
+	MarkBatch(codes []string, bitOffset int) error
+}
+
 type Ingester struct {
-	DB        *storage.BadgerClient
+	DB        Storage
 	BatchSize int
 }
 
