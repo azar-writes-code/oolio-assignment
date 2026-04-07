@@ -10,17 +10,21 @@ import (
 	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/models/products"
 	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/utils/apperrors"
 	"github.com/google/uuid"
+	"github.com/jackc/pgx/v5"
 	"github.com/jackc/pgx/v5/pgtype"
-	"github.com/jackc/pgx/v5/pgxpool"
 )
 
+type Pool interface {
+	Begin(ctx context.Context) (pgx.Tx, error)
+}
+
 type Service struct {
-	pool      *pgxpool.Pool
+	pool      Pool
 	queries   db.Querier
 	couponSvc coupon.CouponService
 }
 
-func NewService(pool *pgxpool.Pool, queries db.Querier, couponSvc coupon.CouponService) *Service {
+func NewService(pool Pool, queries db.Querier, couponSvc coupon.CouponService) *Service {
 	return &Service{
 		pool:      pool,
 		queries:   queries,

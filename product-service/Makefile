@@ -53,6 +53,9 @@ restart-telemetry:
 	@echo "Starting prometheus..."
 	@docker compose -f infra/docker/docker-compose.yml start prometheus
 
+test:
+	@go test ./tests/unit/... -v -coverprofile=coverage.out
+
 end:
 	@make down && clear
 

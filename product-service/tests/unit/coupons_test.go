@@ -1,16 +1,17 @@
-package coupons
+package unit
 
 import (
 	"testing"
 
 	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/models/coupon"
+	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/services/coupons"
 )
 
-type mockRepo struct {
-	data map[string]byte
+type mockCouponRepo struct {
+	data map[string]uint8
 }
 
-func (m *mockRepo) GetByCode(code string) (*coupon.Coupon, error) {
+func (m *mockCouponRepo) GetByCode(code string) (*coupon.Coupon, error) {
 	mask, ok := m.data[code]
 	if !ok {
 		return nil, nil
@@ -19,8 +20,8 @@ func (m *mockRepo) GetByCode(code string) (*coupon.Coupon, error) {
 }
 
 func TestCouponService_Validate(t *testing.T) {
-	repo := &mockRepo{
-		data: map[string]byte{
+	repo := &mockCouponRepo{
+		data: map[string]uint8{
 			"VALID123":    0x03, // 011 -> in file 1 and 2
 			"VALID456":    0x07, // 111 -> in all 3 files
 			"INVALID1":    0x01, // 001 -> only in file 1
@@ -29,7 +30,7 @@ func TestCouponService_Validate(t *testing.T) {
 			"VERYLONG111": 0x03, // Too long (11 chars)
 		},
 	}
-	service := NewService(repo)
+	service := coupons.NewService(repo)
 
 	tests := []struct {
 		code    string
