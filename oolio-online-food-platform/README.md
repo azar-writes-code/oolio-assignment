@@ -47,7 +47,8 @@ src/
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/azar-writes-code/oolio-assignment
+   cd oolio-online-food-platform
    ```
 
 2. Install dependencies:

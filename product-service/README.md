@@ -35,7 +35,7 @@ A robust, high-performance microservice for managing products and processing ord
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/azar-writes-code/oolio-assignment
    cd product-service
    ```
 
@@ -99,9 +99,21 @@ A robust, high-performance microservice for managing products and processing ord
 - `POST /api/v1/order/`: Place a new order (Requires Auth).
 - `POST /api/v1/order/validate-coupon`: Manually validate a promo code.
 
-### System
-- `GET /api/v1/health/health`: System health check.
-- `GET /metrics`: Prometheus metrics.
+## 📊 Monitoring & Observability
+
+The service is fully instrumented with Prometheus for metrics and Loki for logging. A Grafana dashboard is included for visualization.
+
+- **Grafana Desktop**: [http://localhost:3000](http://localhost:3000) (Admin/Admin)
+- **Prometheus UI**: [http://localhost:9091](http://localhost:9091)
+- **Loki Service**: [http://localhost:3100](http://localhost:3100)
+- **Service Metrics**: `/metrics` (direct)
+
+### Predefined Dashboard
+The **"HTTP Metrics"** dashboard in Grafana provides:
+- **Request Rate**: Per-endpoint throughput.
+- **Latency (P99)**: API response time analysis.
+- **Error Rate**: 4xx/5xx status code tracking.
+- **System Health**: CPU, Ram, and DB statistics.
 
 ---
 
