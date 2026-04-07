@@ -19,7 +19,7 @@ The `data-ingestion` service is built to transform flat-file coupon data into a 
 
 ### Prerequisites
 
-- [Go 1.21+](https://go.dev/doc/install)
+- [Go 1.26+](https://go.dev/doc/install)
 - [Make](https://www.gnu.org/software/make/) (optional but recommended)
 
 ### Step 1: Prepare Data
@@ -52,7 +52,7 @@ The process will stream data from `data/` and store the index in `../badger-data
 ## Architectural Details
 
 ### The Pipeline
-
+![Data Ingestion Tool](./Online%20Food%20Platform%20Data-ingestion.svg)
 ```mermaid
 graph LR
     DataSource[Data Files] --> Stream[bufio.Scanner]
