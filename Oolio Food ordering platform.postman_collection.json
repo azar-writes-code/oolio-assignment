@@ -1,0 +1,286 @@
+{
+	"info": {
+		"_postman_id": "011f026b-263a-4bae-bd93-e34801841325",
+		"name": "Oolio Food ordering platform",
+		"description": "API documentation for the Invoice Builder Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26303420"
+	},
+	"item": [
+		{
+			"name": "APIS",
+			"item": [
+				{
+					"name": "health",
+					"item": [
+						{
+							"name": "Health Check",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/health",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"health"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ping",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/health/ping",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"health",
+										"ping"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "product",
+					"item": [
+						{
+							"name": "create",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "api_key",
+										"value": "",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"image\": {\n        \"thumbnail\": \"https://orderfoodonline.deno.dev/public/images/image-waffle-thumbnail.jpg\",\n        \"mobile\": \"https://orderfoodonline.deno.dev/public/images/image-waffle-mobile.jpg\",\n        \"tablet\": \"https://orderfoodonline.deno.dev/public/images/image-waffle-tablet.jpg\",\n        \"desktop\": \"https://orderfoodonline.deno.dev/public/images/image-waffle-desktop.jpg\"\n    },\n    \"name\": \"Waffle with Berries\",\n    \"category\": [\"Waffle\"],\n    \"price\": 6.5,\n    \"stock\": 100\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/products/create-product",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"products",
+										"create-product"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create-many",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "api_key",
+										"value": "",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n    {\n        \"name\": \"Waffle with Berries\",\n        \"price\": 6.5,\n        \"category\": [\n            \"Waffle\"\n        ],\n        \"stock\": 100,\n        \"image\": {\n            \"thumbnail\": \"https://orderfoodonline.deno.dev/public/images/image-waffle-thumbnail.jpg\",\n            \"mobile\": \"https://orderfoodonline.deno.dev/public/images/image-waffle-mobile.jpg\",\n            \"tablet\": \"https://orderfoodonline.deno.dev/public/images/image-waffle-tablet.jpg\",\n            \"desktop\": \"https://orderfoodonline.deno.dev/public/images/image-waffle-desktop.jpg\"\n        }\n    },\n    {\n        \"name\": \"Vanilla Bean Crème Brûlée\",\n        \"price\": 7,\n        \"category\": [\n            \"Crème Brûlée\"\n        ],\n        \"stock\": 100,\n        \"image\": {\n            \"thumbnail\": \"https://orderfoodonline.deno.dev/public/images/image-creme-brulee-thumbnail.jpg\",\n            \"mobile\": \"https://orderfoodonline.deno.dev/public/images/image-creme-brulee-mobile.jpg\",\n            \"tablet\": \"https://orderfoodonline.deno.dev/public/images/image-creme-brulee-tablet.jpg\",\n            \"desktop\": \"https://orderfoodonline.deno.dev/public/images/image-creme-brulee-desktop.jpg\"\n        }\n    },\n    {\n        \"name\": \"Macaron Mix of Five\",\n        \"price\": 8,\n        \"category\": [\n            \"Macaron\"\n        ],\n        \"stock\": 100,\n        \"image\": {\n            \"thumbnail\": \"https://orderfoodonline.deno.dev/public/images/image-macaron-thumbnail.jpg\",\n            \"mobile\": \"https://orderfoodonline.deno.dev/public/images/image-macaron-mobile.jpg\",\n            \"tablet\": \"https://orderfoodonline.deno.dev/public/images/image-macaron-tablet.jpg\",\n            \"desktop\": \"https://orderfoodonline.deno.dev/public/images/image-macaron-desktop.jpg\"\n        }\n    },\n    {\n        \"name\": \"Classic Tiramisu\",\n        \"price\": 5.5,\n        \"category\": [\n            \"Tiramisu\"\n        ],\n        \"stock\": 100,\n        \"image\": {\n            \"thumbnail\": \"https://orderfoodonline.deno.dev/public/images/image-tiramisu-thumbnail.jpg\",\n            \"mobile\": \"https://orderfoodonline.deno.dev/public/images/image-tiramisu-mobile.jpg\",\n            \"tablet\": \"https://orderfoodonline.deno.dev/public/images/image-tiramisu-tablet.jpg\",\n            \"desktop\": \"https://orderfoodonline.dev/public/images/image-tiramisu-desktop.jpg\"\n        }\n    },\n    {\n        \"name\": \"Pistachio Baklava\",\n        \"price\": 4,\n        \"category\": [\n            \"Baklava\"\n        ],\n        \"stock\": 100,\n        \"image\": {\n            \"thumbnail\": \"https://orderfoodonline.deno.dev/public/images/image-baklava-thumbnail.jpg\",\n            \"mobile\": \"https://orderfoodonline.deno.dev/public/images/image-baklava-mobile.jpg\",\n            \"tablet\": \"https://orderfoodonline.deno.dev/public/images/image-baklava-tablet.jpg\",\n            \"desktop\": \"https://orderfoodonline.deno.dev/public/images/image-baklava-desktop.jpg\"\n        }\n    },\n    {\n        \"name\": \"Lemon Meringue Pie\",\n        \"price\": 5,\n        \"category\": [\n            \"Pie\"\n        ],\n        \"stock\": 100,\n        \"image\": {\n            \"thumbnail\": \"https://orderfoodonline.deno.dev/public/images/image-meringue-thumbnail.jpg\",\n            \"mobile\": \"https://orderfoodonline.deno.dev/public/images/image-meringue-mobile.jpg\",\n            \"tablet\": \"https://orderfoodonline.deno.dev/public/images/image-meringue-tablet.jpg\",\n            \"desktop\": \"https://orderfoodonline.deno.dev/public/images/image-meringue-desktop.jpg\"\n        }\n    },\n    {\n        \"name\": \"Red Velvet Cake\",\n        \"price\": 4.5,\n        \"category\": [\n            \"Cake\"\n        ],\n        \"stock\": 100,\n        \"image\": {\n            \"thumbnail\": \"https://orderfoodonline.deno.dev/public/images/image-cake-thumbnail.jpg\",\n            \"mobile\": \"https://orderfoodonline.deno.dev/public/images/image-cake-mobile.jpg\",\n            \"tablet\": \"https://orderfoodonline.deno.dev/public/images/image-cake-tablet.jpg\",\n            \"desktop\": \"https://orderfoodonline.deno.dev/public/images/image-cake-desktop.jpg\"\n        }\n    },\n    {\n        \"name\": \"Salted Caramel Brownie\",\n        \"price\": 4.5,\n        \"category\": [\n            \"Brownie\"\n        ],\n        \"stock\": 100,\n        \"image\": {\n            \"thumbnail\": \"https://orderfoodonline.deno.dev/public/images/image-brownie-thumbnail.jpg\",\n            \"mobile\": \"https://orderfoodonline.deno.dev/public/images/image-brownie-mobile.jpg\",\n            \"tablet\": \"https://orderfoodonline.deno.dev/public/images/image-brownie-tablet.jpg\",\n            \"desktop\": \"https://orderfoodonline.deno.dev/public/images/image-brownie-desktop.jpg\"\n        }\n    },\n    {\n        \"name\": \"Vanilla Panna Cotta\",\n        \"price\": 6.5,\n        \"category\": [\n            \"Panna Cotta\"\n        ],\n        \"stock\": 100,\n        \"image\": {\n            \"thumbnail\": \"https://orderfoodonline.deno.dev/public/images/image-panna-cotta-thumbnail.jpg\",\n            \"mobile\": \"https://orderfoodonline.deno.dev/public/images/image-panna-cotta-mobile.jpg\",\n            \"tablet\": \"https://orderfoodonline.deno.dev/public/images/image-panna-cotta-tablet.jpg\",\n            \"desktop\": \"https://orderfoodonline.deno.dev/public/images/image-panna-cotta-desktop.jpg\"\n        }\n    }\n]",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/products/create-many-products",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"products",
+										"create-many-products"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "list-products",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "api_key",
+										"value": "",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/products",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"products"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "api_key",
+										"value": "",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{base_url}}/products/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"products",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Order",
+					"item": [
+						{
+							"name": "validate-coupon",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "api_key",
+										"value": ""
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Authorization",
+										"value": "Bearer ya29.a0Aa7MYirACtRIiCkxYQnSEpJn39sFX_oQ1v4PfR_qOZrhy1CqZKMWW-srYEqzn1VHSpRfEOCMhlPioOdLFTosBfdZapWxvOp5pUQDDdTiGrdL478DnKEofVTX7gLFRKv67W53PvZQNET3FhuyZ_-gowzcQuwINVtwr0joKQblLV6t88bneEzQJ-TLRM8of_Oy29FsU11A9nqm8Vetzht8H050nlApm_xRukmIEnCAeA5CaRw3UNFASYUStVyDubhRE_4wjIWWEc57yro2EtY8_yQM9W6ffgaCgYKAYsSARASFQHGX2MiFfCqGf2ea-DWbA5gEh8JIg0293"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"couponCode\": \"SUPER100\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/order/validate-coupon",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"order",
+										"validate-coupon"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create-order",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "api_key",
+										"value": "",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"couponCode\": \"HAPPYHRS\",\n    \"items\": [\n        {\n            \"productId\": 1,\n            \"quantity\": 2\n        },\n        {\n            \"productId\": 2,\n            \"quantity\": 1\n        }\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/order/",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"order",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8080"
+		},
+		{
+			"key": "access_token",
+			"value": "YOUR_JWT_TOKEN"
+		}
+	]
+}
