@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/utils/apperrors"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/utils/apperrors"
 )
 
 func TestAppError_Error(t *testing.T) {

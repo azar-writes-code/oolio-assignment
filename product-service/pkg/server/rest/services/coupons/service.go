@@ -3,8 +3,8 @@ package coupons
 import (
 	"math/bits"
 
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/models/coupon"
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/utils/apperrors"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/models/coupon"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/utils/apperrors"
 )
 
 type service struct {

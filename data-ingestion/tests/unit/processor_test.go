@@ -6,7 +6,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/azar-writes-code/oolio-data-ingestion/internal/processor"
+	"github.com/azar-writes-code/swilio-data-ingestion/internal/processor"
 	"github.com/stretchr/testify/assert"
 )
 

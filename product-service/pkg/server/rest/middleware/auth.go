@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/utils/apperrors"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/utils/apperrors"
 	"github.com/gin-gonic/gin"
 )
 

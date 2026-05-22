@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"github.com/azar-writes-code/oolio-products-backend/pkg/telemetry"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/telemetry"
 	"github.com/gin-gonic/gin"
 )
 

@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"github.com/azar-writes-code/oolio-products-backend/config"
+	"github.com/azar-writes-code/swilio-products-backend/config"
 	"github.com/dgraph-io/badger/v4"
 	"github.com/gin-gonic/gin"
 	"github.com/jackc/pgx/v5/pgxpool"

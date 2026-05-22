@@ -205,7 +205,7 @@
         {
           "editorMode": "builder",
           "exemplar": false,
-          "expr": "sum by(status) (http_requests_total{service=\"oolio-product-service\", path!=\"/metrics\"})",
+          "expr": "sum by(status) (http_requests_total{service=\"swilio-product-service\", path!=\"/metrics\"})",
           "legendFormat": "__auto",
           "range": true,
           "refId": "A"
@@ -929,7 +929,7 @@
           },
           "direction": "backward",
           "editorMode": "builder",
-          "expr": "{service=\"oolio-product-service\"} != `INFO`",
+          "expr": "{service=\"swilio-product-service\"} != `INFO`",
           "queryType": "range",
           "refId": "A"
         }
@@ -951,7 +951,7 @@
   },
   "timepicker": {},
   "timezone": "browser",
-  "title": "Oolio Food Ordering Backend — HTTP Metrics",
+  "title": "Swilio Food Ordering Backend — HTTP Metrics",
   "uid": "invoice-http-metrics",
   "version": 1,
   "weekStart": ""

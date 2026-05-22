@@ -5,12 +5,12 @@ import (
 	"log/slog"
 	"os"
 
-	"github.com/azar-writes-code/oolio-products-backend/config"
-	"github.com/azar-writes-code/oolio-products-backend/pkg/app"
-	"github.com/azar-writes-code/oolio-products-backend/pkg/logger"
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest"
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/dtos/database"
-	"github.com/azar-writes-code/oolio-products-backend/pkg/telemetry"
+	"github.com/azar-writes-code/swilio-products-backend/config"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/app"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/logger"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/dtos/database"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/telemetry"
 )
 
 // version is injected at build time via: go build -ldflags "-X main.version=1.2.3"
@@ -42,7 +42,7 @@ func main() {
 	} else {
 		logger.Init(cfg.App.LogLevel, cfg.App.LogFormat)
 	}
-	slog.Info("Starting Oolio Online Food Ordering System Backend",
+	slog.Info("Starting Swilio Online Food Ordering System Backend",
 		"service", cfg.App.ServiceName,
 		"version", cfg.App.Version,
 		"environment", cfg.App.Environment,

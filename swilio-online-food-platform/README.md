@@ -1,4 +1,4 @@
-# Oolio Online Food Platform 🍰
+# Swilio Online Food Platform 🍰
 
 A modern, responsive, and high-performance food ordering frontend built with React, TypeScript, and Vite. This platform offers a seamless dessert browsing and ordering experience with real-time cart updates and secure coupon validation.
 
@@ -47,8 +47,8 @@ src/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/azar-writes-code/oolio-assignment
-   cd oolio-online-food-platform
+   git clone https://github.com/azar-writes-code/swilio-assignment
+   cd swilio-online-food-platform
    ```
 
 2. Install dependencies:
@@ -74,7 +74,7 @@ The app will be available at `http://localhost:5173`.
 
 ## 🔗 Backend Integration
 
-This frontend is designed to work seamlessly with the **Oolio Product Service** (Go/Gin).
+This frontend is designed to work seamlessly with the **Swilio Product Service** (Go/Gin).
 - **Default Port**: `8080`
 - **Endpoints Used**: 
   - `GET /products/`: Fetch dessert list

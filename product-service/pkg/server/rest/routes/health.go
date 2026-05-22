@@ -3,8 +3,8 @@ package routes
 import (
 	"fmt"
 
-	"github.com/azar-writes-code/oolio-products-backend/config"
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/controllers/health"
+	"github.com/azar-writes-code/swilio-products-backend/config"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/controllers/health"
 	"github.com/gin-gonic/gin"
 )
 

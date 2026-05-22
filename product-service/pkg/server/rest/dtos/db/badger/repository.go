@@ -3,8 +3,8 @@ package badger
 import (
 	"errors"
 
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/models/coupon"
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/utils/apperrors"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/models/coupon"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/utils/apperrors"
 	"github.com/dgraph-io/badger/v4"
 )
 

@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/azar-writes-code/oolio-data-ingestion/internal/datasource"
+	"github.com/azar-writes-code/swilio-data-ingestion/internal/datasource"
 	"github.com/stretchr/testify/assert"
 )
 

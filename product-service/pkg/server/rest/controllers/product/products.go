@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/models"
-	models_products "github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/models/products"
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/utils/apperrors"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/models"
+	models_products "github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/models/products"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/utils/apperrors"
 	"github.com/gin-gonic/gin"
 )
 

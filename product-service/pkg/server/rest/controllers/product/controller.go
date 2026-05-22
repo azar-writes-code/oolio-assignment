@@ -3,10 +3,10 @@ package product
 import (
 	"context"
 
-	"github.com/azar-writes-code/oolio-products-backend/config"
-	db "github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/dtos/db/sqlc"
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/models"
-	models_products "github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/models/products"
+	"github.com/azar-writes-code/swilio-products-backend/config"
+	db "github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/dtos/db/sqlc"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/models"
+	models_products "github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/models/products"
 )
 
 type ProductService interface {

@@ -5,7 +5,7 @@ import (
 	"log/slog"
 	"os"
 
-	"github.com/azar-writes-code/oolio-products-backend/pkg/app"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/app"
 )
 
 func main() {

@@ -1,4 +1,4 @@
-# Oolio Product Service
+# Swilio Product Service
 
 A robust, high-performance microservice for managing products and processing orders with coupon validation. Built with Go, PostgreSQL, and BadgerDB.
 
@@ -35,7 +35,7 @@ A robust, high-performance microservice for managing products and processing ord
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/azar-writes-code/oolio-assignment
+   git clone https://github.com/azar-writes-code/swilio-assignment
    cd product-service
    ```
 

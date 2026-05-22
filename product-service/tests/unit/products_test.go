@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/azar-writes-code/oolio-products-backend/config"
-	db "github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/dtos/db/sqlc"
-	models_products "github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/models/products"
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/services/products"
+	"github.com/azar-writes-code/swilio-products-backend/config"
+	db "github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/dtos/db/sqlc"
+	models_products "github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/models/products"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/services/products"
 )
 
 type mockProductDAO struct {

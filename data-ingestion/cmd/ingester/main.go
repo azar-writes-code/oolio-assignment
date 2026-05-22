@@ -4,9 +4,9 @@ import (
 	"context"
 	"log"
 
-	"github.com/azar-writes-code/oolio-data-ingestion/internal/datasource"
-	"github.com/azar-writes-code/oolio-data-ingestion/internal/processor"
-	"github.com/azar-writes-code/oolio-data-ingestion/internal/storage"
+	"github.com/azar-writes-code/swilio-data-ingestion/internal/datasource"
+	"github.com/azar-writes-code/swilio-data-ingestion/internal/processor"
+	"github.com/azar-writes-code/swilio-data-ingestion/internal/storage"
 )
 
 func main() {

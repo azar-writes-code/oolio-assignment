@@ -3,10 +3,10 @@ package order
 import (
 	"net/http"
 
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/models/coupon"
-	orderModel "github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/models/order"
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/services/orders"
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/utils/apperrors"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/models/coupon"
+	orderModel "github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/models/order"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/services/orders"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/utils/apperrors"
 	"github.com/gin-gonic/gin"
 )
 

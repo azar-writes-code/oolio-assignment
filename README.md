@@ -1,4 +1,4 @@
-# Oolio Assignment - Online Food Ordering Platform 🍰
+# Swilio Assignment - Online Food Ordering Platform 🍰
 
 A professional, high-performance monorepo implementing a robust food ordering platform. This project showcases a modern full-stack architecture featuring a **React 19** frontend, a **concurrent Go** backend, and a **high-speed data ingestion pipeline**.
 
@@ -53,7 +53,7 @@ graph TD
 
 ```text
 .
-├── oolio-online-food-platform/ # React 19 / TypeScript / Tailwind 4 Frontend
+├── swilio-online-food-platform/ # React 19 / TypeScript / Tailwind 4 Frontend
 ├── product-service/            # Go 1.26 / Gin / PostgreSQL Backend API
 ├── data-ingestion/             # Concurrent Go tool for Promo Code indexing
 ├── badger-data/                # Persistent KV storage (Shared/Shared)
@@ -64,7 +64,7 @@ graph TD
 
 ## 🚀 Services & Key Features
 
-### 1. [Online Food Platform (UI)](./oolio-online-food-platform/README.md)
+### 1. [Online Food Platform (UI)](./swilio-online-food-platform/README.md)
 - **Tech Stack**: React 19, TypeScript, Vite 8, Zustand 5, TanStack Query 5, Tailwind 4.
 - **Features**: 
   - Dynamic dessert grid with optimized loading.
@@ -113,8 +113,8 @@ Access the pre-configured observability stack for real-time system monitoring:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/azar-writes-code/oolio-assignment
-   cd oolio-assignment
+   git clone https://github.com/azar-writes-code/swilio-assignment
+   cd swilio-assignment
    ```
 
 2. **Ingest Promo Data**:
@@ -127,7 +127,7 @@ Access the pre-configured observability stack for real-time system monitoring:
    ```
 4. **Start Frontend**:
    ```bash
-   cd oolio-online-food-platform && npm install && npm run dev
+   cd swilio-online-food-platform && npm install && npm run dev
    ```
 
 ---
@@ -142,4 +142,4 @@ A promo code is valid if:
 
 ---
 
-**Developed for the Oolio Advanced Challenge.**
+**Developed for the Swilio Advanced Challenge.**

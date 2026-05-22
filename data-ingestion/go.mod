@@ -1,4 +1,4 @@
-module github.com/azar-writes-code/oolio-data-ingestion
+module github.com/azar-writes-code/swilio-data-ingestion
 
 go 1.26.1
 

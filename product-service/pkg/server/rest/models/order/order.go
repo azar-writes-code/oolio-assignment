@@ -1,6 +1,6 @@
 package order
 
-import "github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/models/products"
+import "github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/models/products"
 
 type OrderItemReq struct {
 	ProductID int32 `json:"productId" binding:"required"`

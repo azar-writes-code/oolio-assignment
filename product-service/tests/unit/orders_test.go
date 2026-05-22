@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/models/order"
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/models/products"
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/services/orders"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/models/order"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/models/products"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/services/orders"
 	"github.com/jackc/pgx/v5/pgtype"
 	"github.com/pashagolub/pgxmock/v3"
 )

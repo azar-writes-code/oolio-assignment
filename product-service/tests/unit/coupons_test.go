@@ -3,8 +3,8 @@ package unit
 import (
 	"testing"
 
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/models/coupon"
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/services/coupons"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/models/coupon"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/services/coupons"
 )
 
 type mockCouponRepo struct {

@@ -3,8 +3,8 @@ package products
 import (
 	"context"
 
-	"github.com/azar-writes-code/oolio-products-backend/config"
-	db "github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/dtos/db/sqlc"
+	"github.com/azar-writes-code/swilio-products-backend/config"
+	db "github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/dtos/db/sqlc"
 )
 
 type ProductDAO interface {

@@ -1,4 +1,4 @@
-module github.com/azar-writes-code/oolio-products-backend
+module github.com/azar-writes-code/swilio-products-backend
 
 go 1.26.1
 

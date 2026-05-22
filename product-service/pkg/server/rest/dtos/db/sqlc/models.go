@@ -5,7 +5,7 @@
 package db
 
 import (
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/models/products"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/models/products"
 	"github.com/jackc/pgx/v5/pgtype"
 )
 

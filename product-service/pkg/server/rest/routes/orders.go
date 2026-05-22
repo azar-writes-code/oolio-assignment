@@ -1,13 +1,13 @@
 package routes
 
 import (
-	"github.com/azar-writes-code/oolio-products-backend/config"
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/controllers/order"
-	db "github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/dtos/db/sqlc"
-	badgerRepo "github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/dtos/db/badger"
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/middleware"
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/services/coupons"
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/services/orders"
+	"github.com/azar-writes-code/swilio-products-backend/config"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/controllers/order"
+	badgerRepo "github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/dtos/db/badger"
+	db "github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/dtos/db/sqlc"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/middleware"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/services/coupons"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/services/orders"
 	"github.com/dgraph-io/badger/v4"
 	"github.com/gin-gonic/gin"
 	"github.com/jackc/pgx/v5/pgxpool"

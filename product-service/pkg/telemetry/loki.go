@@ -49,7 +49,7 @@ func (lw *LokiWriter) push(line string) {
 			{
 				Stream: map[string]string{
 					"service": lw.serviceName,
-					"app":     "oolio-food-ordering-backend",
+					"app":     "swilio-food-ordering-backend",
 				},
 				Values: [][]string{{ts, line}},
 			},

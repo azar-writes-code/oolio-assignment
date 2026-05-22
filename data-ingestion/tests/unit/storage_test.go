@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/azar-writes-code/oolio-data-ingestion/internal/storage"
+	"github.com/azar-writes-code/swilio-data-ingestion/internal/storage"
 	"github.com/dgraph-io/badger/v4"
 	"github.com/stretchr/testify/assert"
 )

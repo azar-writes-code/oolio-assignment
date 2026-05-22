@@ -6,8 +6,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/azar-writes-code/oolio-products-backend/config"
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/dtos/database"
+	"github.com/azar-writes-code/swilio-products-backend/config"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/dtos/database"
 )
 
 func Migrate() {

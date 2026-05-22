@@ -6,10 +6,10 @@ import (
 	"log/slog"
 	"strings"
 
-	db "github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/dtos/db/sqlc"
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/models"
-	models_products "github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/models/products"
-	"github.com/azar-writes-code/oolio-products-backend/pkg/server/rest/utils/apperrors"
+	db "github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/dtos/db/sqlc"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/models"
+	models_products "github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/models/products"
+	"github.com/azar-writes-code/swilio-products-backend/pkg/server/rest/utils/apperrors"
 	"github.com/jackc/pgx/v5/pgtype"
 )
 
